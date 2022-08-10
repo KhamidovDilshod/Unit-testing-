@@ -11,6 +11,12 @@ describe('First test', () => {
     testVariable.a = true;
 
     //assert
-    expect(testVariable.a.toBe(true));
+    expect(testVariable.a).toBe(true);
   })
+})
+describe('Array', () => {
+  let arr: ArrayBuffer = new ArrayBuffer(10);
+  it('Array length should be 10', function () {
+      expect(arr.byteLength).toEqual(10);
+  });
 })
